@@ -4,7 +4,7 @@ Este documento descreve a estratégia de testes aplicada aos endpoints da Brasil
 
 Como Importar e Rodar
 1. No Postman, clique no botão **Import**.
-2. Arraste o arquivo `APIs do BrasilAPI.postman_collection` contido neste repositório.
+2. Arraste o arquivo `APIs do BrasilAPI.postman_collection`.
 3. Com a coleção carregada, clique em cada Endpoint desejado.
 
 -- Cenários de Teste
