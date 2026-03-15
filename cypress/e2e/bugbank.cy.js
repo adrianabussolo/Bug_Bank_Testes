@@ -2,7 +2,7 @@
 
 describe('Fluxos de Autenticação e Cadastro - BugBank', () => {
   
-  // Acessa o site antes de cada teste
+  // Acessar o site antes de cada teste
   beforeEach(() => {
     cy.visit('https://bugbank.netlify.app/');
   });
@@ -29,10 +29,10 @@ describe('Fluxos de Autenticação e Cadastro - BugBank', () => {
     // 4. Cadastrar e Validar
     cy.contains('button', 'Cadastrar').click({force: true});
 
-    // Validação Sênior: Verifica se o texto de sucesso apareceu no modal
+    // Verifica se o texto de sucesso apareceu.
     cy.get('#modalText').should('contain', 'foi criada com sucesso');
     
-    // Fechar o modal para concluir o fluxo
+    // Fechar a tela para concluir o fluxo
     cy.get('#btnCloseModal').click();
   });
 
